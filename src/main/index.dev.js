@@ -14,13 +14,13 @@ const {app, BrowserWindow} = require('electron'),
 
 // Install `vue-devtools`
 app.on('ready', () => {
-  let installExtension = require('electron-devtools-installer')
+  /*let installExtension = require('electron-devtools-installer')
   installExtension.default(installExtension.VUEJS_DEVTOOLS)
     .then(() => {
     })
     .catch(err => {
       console.log('Unable to install `vue-devtools`: \n', err)
-    })
+    })*/
   BrowserWindow.addDevToolsExtension(path.resolve(__dirname, '../../devTools/chrome'))
 })
 

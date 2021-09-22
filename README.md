@@ -6,7 +6,8 @@
 
 ``` bash
 # install dependencies
-npm install
+yarn
+cnpm i // 推荐
 
 # serve with hot reload at localhost:9080
 npm run dev
